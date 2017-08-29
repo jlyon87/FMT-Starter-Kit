@@ -20,6 +20,7 @@ What to do? Deploy or Validate, with or without tests.
 
  * References the build.properties file for various `sf.` variables like `sf.username`.
  * References the /src/package.xml for the list of SF metadata to operate against.
+
 Defines tasks, known in ant as targets, to be run against your desired SF environment. Tasks such as Deploy with tests, without tests, validate only, validate only with tests, or simply retrieve.
 
 The build.xml I have shared is a custom build file that I have created from the FMT's sample build.xml.
