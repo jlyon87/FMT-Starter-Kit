@@ -1,5 +1,5 @@
 # Force.com Migration Tool Starter Kit
-
+Before installing FMT, you'll need to install Java and Ant as prerequisites. The instructions for the FMT install guide begin here. After installing everything, make sure your environment paths are set for Java and Ant, and be sure to copy the salesforce.jar from the FMT download into your Ant /lib/ folder. 
 
 Without any experience with ant, the contents of these folders may be a little overwhelming. The workhorses in each folder are build.xml, build.properties, and /src/package.xml. The .bat files I'll cover last.
 
