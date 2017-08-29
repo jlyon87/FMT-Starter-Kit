@@ -1,5 +1,5 @@
 # Force.com Migration Tool Starter Kit
-Before installing FMT, you'll need to install Java and Ant as prerequisites. The instructions for the FMT install guide [begin here](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_container_install.htm). After installing everything, make sure your environment paths are set for Java and Ant, and be sure to copy the salesforce.jar from the FMT download into your Ant /lib/ folder. 
+Before installing FMT, you'll need to install Java and Ant as prerequisites. The instructions for the FMT install guide [begin here](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_container_install.htm). After installing everything, make sure your environment paths are set for Java and Ant, and be sure to copy the salesforce.jar from the FMT download into your Ant /lib/ folder.
 
 Without any experience with ant, the contents of these folders may be a little overwhelming. The workhorses in each folder are build.xml, build.properties, and /src/package.xml. The .bat files I'll cover last.
 
@@ -22,3 +22,6 @@ References the /src/package.xml for the list of SF metadata to operate against.
 Defines tasks, known in ant as targets, to be run against your desired SF environment. Tasks such as Deploy with tests, without tests, validate only, validate only with tests, or simply retrieve.
 
 The build.xml I have shared is a custom build file that I have created from the FMT's sample build.xml.
+
+### batch files
+The `.bat` files I've included are simple windows batch files that will execute one of the build.xml's targets for you without having to use bash or windows command prompt. They are quick and easy to use, but you will not get any error reporting or logging. If you wish to see errors and logging, I recommend opening bash to your folder and typing out the ant command yourself. The command begins with `ant` and ends with the name of the target you want to call from the build.xml. Such as `ant retrieve` from this example.
